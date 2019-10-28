@@ -71,4 +71,14 @@ h4s[5].textContent = siteContent['contact']['contact-h4'];
 paragraphs[5].textContent = siteContent['contact']['address']
 paragraphs[6].textContent = siteContent['contact']['phone']
 paragraphs[7].textContent = siteContent['contact']['email']
-paragraphs[8].textContent = siteContent['footer']['copyright']
+paragraphs[8].textContent = siteContent['footer']['copyright'];
+for(let i =0; i < aTags.length; i++){
+  aTags[i].style.color = 'green'
+}
+let nav = document.querySelector("nav");
+let test = document.createElement('a');
+test.textContent = 'Test';
+nav.prepend(test);
+let test2 = document.createElement('a');
+test2.textContent = 'Test 2';
+nav.appendChild(test2)
