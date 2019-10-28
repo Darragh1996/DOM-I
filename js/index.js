@@ -81,4 +81,11 @@ test.textContent = 'Test';
 nav.prepend(test);
 let test2 = document.createElement('a');
 test2.textContent = 'Test 2';
-nav.appendChild(test2)
+nav.appendChild(test2);
+let contact = document.querySelector('.contact');
+let newBtn = document.createElement('button');
+newBtn.textContent = 'Press Me';
+contact.prepend(newBtn);
+newBtn.addEventListener('click', (event)=>{
+  contact.style.background = 'red';
+})
